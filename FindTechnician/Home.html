@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<title>Find Technician</title>
+<title>TechnicianOnTheWay.com</title>
 
 
 <meta http-equiv="refresh" content="1200">
@@ -24,17 +24,19 @@
 
   
     <div id="page-title">
-      <div id="page-text">Find Technician</div>
+      <div id="page-text">TechnicianOnTheWay.com</div>
     </div>
     <div id="page-body" class="center">
+      <div id="radioGroup">
       <div class="radio_cust" id="NewInstall">
-        <input type="radio" name="optradio"><label>New
+        <input type="radio" name="serviceType" id="newInsRadio" value="new_install"><label>New
           Installation</label>
       </div>
       <div class="radio_cust" id="Maintain">
-        <input type="radio" name="optradio"><label>Maintenance</label>
+        <input type="radio" name="serviceType" id="mainRadio" value="maintainence"><label>Maintenance</label>
       </div>
-      <div id="typeSection">
+    </div>
+      <div id="typeSection" class="notVisible">
         <label for="installType">Type of Installation:</label> <select
           class="form-control" id="installType">
           <option>Voice</option>
@@ -43,9 +45,18 @@
           <option>Washing Machine</option>
         </select>
       </div>
+      <div id="mainTypeSection" class="notVisible">
+        <label for="maintainType">Type of Maintenance:</label> <select
+          class="form-control" id="maintainType">
+          <option>Voice</option>
+          <option>Data</option>
+          <option>TV</option>
+          <option>Washing Machine</option>
+        </select>
+      </div>
 
-      <div id="map" class="center mapStyle"></div>
-      <div>
+      <div id="map" class="center mapStyle notVisible"></div>
+      <div id="booking" class="notVisible">
         <button class="btn btn-sm book_center" type="button" id="book">Book Now !!</button>
       </div>
     </div>

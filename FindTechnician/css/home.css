@@ -31,6 +31,10 @@
     padding: 10px;
 }
 
+.notVisible{
+    display: none;
+}
+
 #NewInstall {
     float:left; 
     margin-top:10px;
@@ -54,7 +58,7 @@
     cursor:pointer;
 }
 
-#typeSection{
+#typeSection,#mainTypeSection{
     position:relative;
     margin-top:100px;
 }
